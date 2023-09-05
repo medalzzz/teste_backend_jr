@@ -15,6 +15,18 @@ Caso você já tenha alguma experiência com Docker ou queira se aventurar, inse
 
 Caso ache a tarefa muito simples e queira implementar algo a mais, será muito bem visto. Nossa sugestão é implementar novos filtros (ex: `order_by`, `limit`, `offset`), outros métodos REST (`GET/{id}`, `POST`, `DELETE`, `PUT`, `PATCH`), testes unitários etc. Só pedimos que, caso faça algo do tipo, nos explique na _Resposta do participante_ abaixo.
 
+# Criação do Ambiente
+1.  Rodar o seguinte comando dentro do diretório contendo Dockerfile e docker-compose.yml para criar a imagem
+
+    ```bash
+    docker-compose build
+    ```
+
+1.  No mesmo diretório, rodar o seguinte comando para iniciar o container na porta 8000
+
+    ```bash
+    docker-compose up
+    ```
 # Resposta do participante
 A parte mais complicada foi a configuração do ambiente docker, como já esperado, sempre acontece alguma coisa que dificulta a criação do ambiente, e nesse caso, foi a instalação do php composer na imagem docker.
 Minha solução consiste em usar o arquivo index.php para fazer o roteamento dos endpoints usando um microframework chamado Flight (https://github.com/mikecao/flight) o qual instalei via php composer.

@@ -1,0 +1,16 @@
+{
+   "name": "hieron/api_rest",
+   "autoload": {
+      "psr-4": {
+         "app\\": "app/"
+      }
+   },
+   "config": {
+      "allow-plugins": {
+         "php-http/discovery": true
+      }
+   },
+   "require": {
+      "mikecao/flight": "^2.0"
+   }
+}
